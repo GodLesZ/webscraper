@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <!--Project was exported from assembly: C:\Program Files (x86)\SysNucleus\WebHarvy\WebHarvy.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37C8D23F-DC1D-437F-B040-D725D7148D42}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>WebScraper</AssemblyName>
+    <RootNamespace>GodLesZ.Tools.WebScraper</RootNamespace>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>3.3.0.106</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GodLesZ.Tools.WebScraper.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>GodLesZ Software.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>lib\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="MySql.Data">
+      <HintPath>lib\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="Interop.SHDocVw">
+      <HintPath>lib\Interop.SHDocVw.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.TaskScheduler">
+      <HintPath>lib\Microsoft.Win32.TaskScheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\BrowserContainer.Designer.cs">
+      <DependentUpon>BrowserContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddTaskForm.Designer.cs">
+      <DependentUpon>AddTaskForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddUrlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddUrlForm.Designer.cs">
+      <DependentUpon>AddUrlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdvancedMinerOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\BrowserContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdvancedMinerOptionsForm.Designer.cs">
+      <DependentUpon>AdvancedMinerOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CaptureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CaptureForm.Designer.cs">
+      <DependentUpon>CaptureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CaptureItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddTaskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CaptureItem.Designer.cs">
+      <DependentUpon>CaptureItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditStartUrlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditStartUrlForm.Designer.cs">
+      <DependentUpon>EditStartUrlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ExportDbForm.Designer.cs">
+      <DependentUpon>ExportDbForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ExportForm.Designer.cs">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KeywordForm.Designer.cs">
+      <DependentUpon>KeywordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MineForm.Designer.cs">
+      <DependentUpon>MineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NagForm.Designer.cs">
+      <DependentUpon>NagForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PreviewForm.Designer.cs">
+      <DependentUpon>PreviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegExForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegExForm.Designer.cs">
+      <DependentUpon>RegExForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SchedulerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KeywordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SchedulerForm.Designer.cs">
+      <DependentUpon>SchedulerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TestProxyForm.Designer.cs">
+      <DependentUpon>TestProxyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Library\ProxyData.cs" />
+    <Compile Include="Forms\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library\InternetProxyInfo.cs" />
+    <Compile Include="Library\IOleObject.cs" />
+    <Compile Include="Library\IOleClientSite.cs" />
+    <Compile Include="Library\IServiceProvider.cs" />
+    <Compile Include="Library\IAuthenticate.cs" />
+    <Compile Include="Library\ProxyManager.cs" />
+    <Compile Include="Library\EExportFormat.cs" />
+    <Compile Include="Forms\ExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library\EServerType.cs" />
+    <Compile Include="Forms\ExportDbForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library\HtmlParser.cs" />
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\ToolStripSpringTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\NagForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Library\EDataType.cs" />
+    <Compile Include="Library\DataField.cs" />
+    <Compile Include="Library\UrlData.cs" />
+    <Compile Include="Library\MineParams.cs" />
+    <Compile Include="Library\RegistrationManager.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TestProxyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library\WebMiner.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StringResource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Components\BrowserContainer.resx">
+      <DependentUpon>BrowserContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddTaskForm.resx">
+      <DependentUpon>AddTaskForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddUrlForm.resx">
+      <DependentUpon>AddUrlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdvancedMinerOptionsForm.resx">
+      <DependentUpon>AdvancedMinerOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CaptureForm.resx">
+      <DependentUpon>CaptureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CaptureItem.resx">
+      <DependentUpon>CaptureItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditStartUrlForm.resx">
+      <DependentUpon>EditStartUrlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExportDbForm.resx">
+      <DependentUpon>ExportDbForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExportForm.resx">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KeywordForm.resx">
+      <DependentUpon>KeywordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MineForm.resx">
+      <DependentUpon>MineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NagForm.resx">
+      <DependentUpon>NagForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PreviewForm.resx">
+      <DependentUpon>PreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegExForm.resx">
+      <DependentUpon>RegExForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SchedulerForm.resx">
+      <DependentUpon>SchedulerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TestProxyForm.resx">
+      <DependentUpon>TestProxyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="InitPage\bg1.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InitPage\demo.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InitPage\help.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InitPage\home.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InitPage\index.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InitPage\screen.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InitPage\support.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InitPage\tick.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InitPage\webharvy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GodLesZ Software.ico" />
+    <None Include="Resources\arrow_down_green.png" />
+    <None Include="Resources\key1_preferences.png" />
+    <None Include="Resources\add2.png" />
+    <None Include="Resources\about.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\clock.png" />
+    <None Include="Resources\key1_add.png" />
+    <None Include="Resources\gears_run.png" />
+    <None Include="Resources\gear_run.png" />
+    <None Include="Resources\pencil.png" />
+    <None Include="Resources\delete2.png" />
+    <None Include="Resources\document_ok.png" />
+    <None Include="Resources\gear_stop.png" />
+    <None Include="Resources\gears_stop.png" />
+    <None Include="Resources\gear.png" />
+    <None Include="Resources\disk_blue.png" />
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
